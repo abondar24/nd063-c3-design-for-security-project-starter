@@ -1,0 +1,3 @@
+1. S3 bucket is not encrypted and no special IAM Policies and groups are created for it
+2. No Security groups and ACL's are used for restriction of ssh access
+3. Students should not have access to token API credentials for accessing secret recipes.
