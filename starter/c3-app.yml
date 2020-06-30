@@ -3,10 +3,10 @@ Description:  This template deploys ec2 instances for the project starter
 Parameters:
   AmiIdRecipeWebServiceInstance:
     Type: String
-    Default: "ami-0ea3405d2d2522162"
+    Default: "ami-0964e67a489e13cdb"
   AmiIdAttackInstance:
     Type: String
-    Default: "ami-031a03cb800ecb0d5"
+    Default: "ami-01fcf79ce78f46764"
   KeyPair:
     Type: String
     Description: "Name of an existing KeyPair you will use to access the EC2 instances in this exercise. Be sure you have access to the private key file corresponding to this keypair."
@@ -71,7 +71,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: !Ref AmiIdRecipeWebServiceInstance
-      InstanceType: t2.micro
+      InstanceType: t3.micro
       KeyName: !Ref KeyPair
       SecurityGroupIds:
       - !GetAtt WebAppSG.GroupId
@@ -167,7 +167,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: !Ref AmiIdAttackInstance
-      InstanceType: t2.micro
+      InstanceType: t3.micro
       KeyName: !Ref KeyPair
       IamInstanceProfile: !Ref InstanceProfileRole
       SecurityGroupIds:

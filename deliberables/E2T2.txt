@@ -1,0 +1,22 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+1. No bucket encryption
+
+2. Passwords do not match IAM policy(higher risk of brute force)
+
+3. No EBS volume encryption
+
+4. Redirection to HTTPS is not supported.
+
+5. Guardduty not enabled for Load Balancer
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+1. Use encryption of all data storages
+
+2. Set up strong password policy
+
+3. Accept only HTTPS Traffic(Load Balancer must accept only port 443
+ and InternetGateway must redirect from port 80 to port 443)
+
+4. Enable Guardduty 
