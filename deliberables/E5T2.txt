@@ -1,13 +1,20 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
+Regula
 
 ### Example vulnerability
+EBS encryption disabled
 
 ##Scan AMI’s or containers for OS vulnerabilities
+Amazon ECR
 
 ### Example vulnerability
+Root access
+Password based authentication
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+AWS security hub
 
 ### Example vulnerability
+security groups do not restrict ports or allow access from all IP's
