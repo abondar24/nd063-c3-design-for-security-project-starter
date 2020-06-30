@@ -1,0 +1,14 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+
+GuardDuty finding: UnauthorizedAccess:EC2/SSHBruteForce with two different severity levels(low and high)
+
+The low severity finding has a Resource role of target and describes the target EC2 instance which was attacked.
+
+The low severity finding has a Resource role of actor and describes the target EC2 instance which was making a brute force.
+
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+
+The attack was detected by Detector with which all findings are associated. The main source of data is CloudTrail event logs, VPC Flow and DNS logs
+ which were showing  unexpectedly high network activity. GuardDuty analyzes all CloudTrail global events within a region.
+ VPC flow logs can provide data regarding network traffic. 
