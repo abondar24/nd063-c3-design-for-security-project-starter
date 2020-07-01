@@ -11,4 +11,6 @@ The low severity finding has a Resource role of actor and describes the target E
 
 The attack was detected by Detector with which all findings are associated. The main source of data is CloudTrail event logs, VPC Flow and DNS logs
  which were showing  unexpectedly high network activity. GuardDuty analyzes all CloudTrail global events within a region.
- VPC flow logs can provide data regarding network traffic. 
+ VPC flow logs can provide data regarding network traffic.
+
+Speaking about SSH brute force VPC flow logs is the main source of data for GuardDuty
